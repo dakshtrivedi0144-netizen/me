@@ -418,6 +418,184 @@ footer span { color: var(--teal); }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--g2); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--teal-dim); }
+
+/* ── RESPONSIVE DESIGN ─────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .container { padding: 0 24px; }
+  nav { padding: 0 24px; }
+  footer { padding: 20px 24px; }
+  .hero-inner { gap: 40px; }
+  .skills-layout { grid-template-columns: 1fr; }
+  .certs-grid { grid-template-columns: 1fr; }
+  .ach-grid { grid-template-columns: 1fr 1fr; }
+  .contact-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  body { font-size: 14px; }
+  nav { padding: 0 16px; height: 50px; }
+  .nav-logo { font-size: 10px; }
+  .nav-links { display: none; }
+  .nav-avail { font-size: 10px; padding: 4px 10px; }
+  .container { padding: 0 16px; }
+  footer { padding: 16px; flex-direction: column; gap: 12px; text-align: center; }
+  
+  #hero { padding-top: 50px; }
+  .hero-inner { grid-template-columns: 1fr; gap: 30px; }
+  .hero-right { display: none; }
+  .hero-name { font-size: clamp(32px, 8vw, 56px); }
+  .hero-desc { font-size: 14px; }
+  .hero-btns { flex-direction: column; }
+  .btn-primary, .btn-outline, .btn-ghost { width: 100%; justify-content: center; }
+  
+  .stats-inner { flex-direction: column; gap: 16px; }
+  .stat-div { display: none; }
+  .stat-num { font-size: 28px; }
+  .stat-label { font-size: 10px; }
+  
+  section { padding: 60px 0; }
+  .sec-title { font-size: clamp(24px, 6vw, 36px); }
+  .sec-sub { font-size: 14px; }
+  
+  .skills-layout { grid-template-columns: 1fr; gap: 16px; }
+  .skill-group { padding: 20px 16px; }
+  .sg-title { font-size: 11px; }
+  .skill-tag { font-size: 10px; padding: 4px 8px; }
+  .webdev-note { flex-direction: column; gap: 12px; padding: 16px; }
+  .webdev-note-icon { font-size: 24px; }
+  .webdev-note-text { font-size: 13px; }
+  
+  .proj-card { grid-template-columns: 1fr; }
+  .proj-side { padding: 24px 20px; border-right: none; border-bottom: 1px solid var(--border); }
+  .proj-body { padding: 24px 20px; }
+  .proj-num { font-size: 40px; }
+  .proj-icon { font-size: 28px; }
+  .proj-title { font-size: 18px; }
+  .proj-desc { font-size: 13px; }
+  .proj-feats li { font-size: 13px; }
+  .proj-footer { flex-direction: column; gap: 16px; }
+  .proj-link { font-size: 11px; }
+  
+  .certs-grid { grid-template-columns: 1fr; gap: 16px; }
+  .cert-card { padding: 24px 20px; }
+  .cert-badge { width: 44px; height: 44px; font-size: 18px; }
+  .cert-card h3 { font-size: 16px; }
+  .cert-issuer { font-size: 10px; }
+  .cert-chip { font-size: 10px; padding: 3px 8px; }
+  
+  .learning-row { grid-template-columns: 1fr; gap: 16px; }
+  .learn-card { padding: 16px; gap: 12px; }
+  .learn-icon { font-size: 24px; }
+  .learn-title { font-size: 14px; }
+  .learn-sub { font-size: 10px; }
+  
+  .ach-grid { grid-template-columns: 1fr; gap: 12px; }
+  .ach-card { padding: 20px 16px; }
+  .ach-num { font-size: 36px; }
+  .ach-text { font-size: 13px; }
+  
+  .contact-inner { padding: 0 16px; }
+  .contact-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .contact-btn { padding: 14px 10px; font-size: 10px; }
+  .contact-btn .icon { font-size: 18px; }
+  .contact-email { font-size: 12px; }
+  .avail-banner { font-size: 11px; padding: 10px 16px; }
+  
+  .orb-1 { width: 400px; height: 400px; top: -150px; right: -150px; }
+  .orb-2 { width: 300px; height: 300px; bottom: 10%; left: -100px; }
+  .orb-3 { width: 200px; height: 200px; top: 50%; left: 30%; }
+}
+
+@media (max-width: 480px) {
+  body { font-size: 13px; }
+  nav { padding: 0 12px; height: 45px; }
+  .nav-logo { font-size: 9px; letter-spacing: 2px; }
+  .nav-avail { font-size: 9px; padding: 3px 8px; }
+  .container { padding: 0 12px; }
+  footer { padding: 12px; font-size: 10px; }
+  
+  #hero { padding-top: 45px; min-height: auto; }
+  .hero-inner { gap: 20px; }
+  .hero-name { font-size: clamp(28px, 10vw, 48px); margin-bottom: 12px; }
+  .hero-tag { font-size: 10px; margin-bottom: 16px; }
+  .hero-roles { gap: 4px; margin-bottom: 16px; }
+  .role-pill { padding: 4px 10px; font-size: 10px; }
+  .hero-desc { font-size: 13px; margin-bottom: 24px; line-height: 1.6; }
+  .hero-btns { gap: 8px; }
+  .btn-primary, .btn-outline, .btn-ghost { padding: 11px 20px; font-size: 11px; }
+  
+  .stats-strip { padding: 20px 0; }
+  .stat-num { font-size: 24px; }
+  .stat-label { font-size: 9px; }
+  
+  section { padding: 40px 0; }
+  .sec-eyebrow { font-size: 10px; margin-bottom: 8px; }
+  .sec-title { font-size: clamp(20px, 7vw, 32px); margin-bottom: 10px; }
+  .sec-sub { font-size: 13px; margin-bottom: 32px; }
+  
+  .skill-group { padding: 16px 12px; }
+  .sg-header { gap: 8px; margin-bottom: 16px; }
+  .sg-icon { font-size: 18px; }
+  .sg-title { font-size: 10px; }
+  .skill-tags { gap: 5px; }
+  .skill-tag { font-size: 9px; padding: 3px 6px; }
+  .webdev-note { padding: 12px; gap: 10px; }
+  .webdev-note-icon { font-size: 20px; }
+  .webdev-note-text { font-size: 12px; }
+  
+  .proj-side { padding: 16px 12px; }
+  .proj-body { padding: 16px 12px; }
+  .proj-num { font-size: 32px; margin-bottom: 12px; }
+  .proj-icon { font-size: 24px; margin-bottom: 12px; }
+  .proj-title { font-size: 16px; }
+  .proj-subtitle { font-size: 10px; }
+  .proj-desc { font-size: 12px; }
+  .proj-feats li { font-size: 12px; padding-left: 14px; }
+  .proj-footer { padding-top: 12px; }
+  .proj-stack span { font-size: 9px; padding: 2px 6px; }
+  .proj-link { font-size: 10px; }
+  
+  .cert-card { padding: 16px 12px; }
+  .cert-badge { width: 40px; height: 40px; font-size: 16px; margin-bottom: 12px; }
+  .cert-card h3 { font-size: 14px; margin-bottom: 6px; }
+  .cert-issuer { font-size: 9px; }
+  .cert-no { font-size: 9px; }
+  .cert-chips { gap: 4px; margin-top: 12px; }
+  .cert-chip { padding: 2px 6px; font-size: 9px; }
+  
+  .learn-card { padding: 12px; gap: 10px; }
+  .learn-icon { font-size: 20px; }
+  .learn-title { font-size: 13px; }
+  .learn-sub { font-size: 9px; }
+  
+  .ach-card { padding: 16px 12px; }
+  .ach-num { font-size: 32px; margin-bottom: 8px; }
+  .ach-text { font-size: 12px; }
+  
+  .contact-grid { grid-template-columns: 1fr; gap: 6px; }
+  .contact-btn { padding: 12px 8px; font-size: 9px; }
+  .contact-btn .icon { font-size: 16px; }
+  .contact-email { font-size: 11px; margin-bottom: 16px; }
+  .avail-banner { font-size: 10px; padding: 8px 12px; gap: 8px; }
+  
+  .orb-1 { width: 300px; height: 300px; top: -100px; right: -100px; }
+  .orb-2 { width: 200px; height: 200px; bottom: 15%; left: -80px; }
+  .orb-3 { width: 150px; height: 150px; top: 60%; left: 20%; }
+  
+  .t-body { padding: 16px; font-size: 11px; }
+  .t-line { gap: 6px; }
+  .t-title { font-size: 10px; }
+}
+
+@media (max-width: 360px) {
+  .hero-name { font-size: clamp(24px, 12vw, 40px); }
+  .btn-primary, .btn-outline, .btn-ghost { padding: 10px 16px; font-size: 10px; }
+  .stat-num { font-size: 20px; }
+  .sec-title { font-size: clamp(18px, 8vw, 28px); }
+  .proj-num { font-size: 28px; }
+  .ach-num { font-size: 28px; }
+  .contact-grid { grid-template-columns: 1fr; }
+}
 </style>
 </head>
 <body>
