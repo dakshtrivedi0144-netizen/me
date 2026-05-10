@@ -286,6 +286,26 @@ section { padding: 100px 0; position: relative; z-index: 2; }
   overflow: hidden; transition: border-color 0.3s, transform 0.3s;
   position: relative;
 }
+
+/* Professional Projects Title Styling */
+#projects .sec-title {
+  font-family: var(--display);
+  font-size: clamp(30px, 4vw, 46px);
+  font-weight: 800;
+  margin-bottom: 14px;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+  background: linear-gradient(135deg, var(--white) 0%, var(--teal) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#projects .sec-title .accent {
+  color: var(--teal);
+  -webkit-text-fill-color: var(--teal);
+}
+
 .proj-card:hover { border-color: var(--border2); transform: translateY(-4px); box-shadow: 0 20px 60px rgba(0,0,0,0.4); }
 .proj-side {
   background: var(--panel2); padding: 36px 28px;
@@ -958,7 +978,7 @@ footer span { color: var(--teal); }
         <a href="https://tryhackme.com/p/dakshtrivedi0144" class="contact-btn" target="_blank"><span class="icon">⚑</span>TRYHACKME</a>
       </div>
       <div class="contact-email reveal">
-        dakshtrivedi0144@gmail.com &nbsp;·&nbsp; <a href="tel:+918866568605">+91 8866568605</a>
+        <!-- Email and phone removed for privacy -->
       </div>
       <div class="avail-banner reveal">
         <div class="pulse"></div>
